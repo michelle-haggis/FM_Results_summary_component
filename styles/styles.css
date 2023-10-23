@@ -222,8 +222,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Set to 100% to fill the screen width */
-    height: auto; /* Remove fixed height */
+    width: 100%;
+    height: auto;
     background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
     border-radius: 0 0 20px 20px;
     box-shadow: 0;
@@ -300,7 +300,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto; /* Remove fixed height */
+    height: auto;
     position: absolute;
     top: 50%;
     z-index: 1;
