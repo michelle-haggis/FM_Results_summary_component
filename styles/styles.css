@@ -204,15 +204,17 @@ body {
   margin: 0 auto;
 }
 @media (max-width: 375px) {
+  body {
+    overflow-x: hidden;
+  }
   .container {
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    max-width: 375px;
+    max-width: 360px;
     height: 100vh;
     margin: 0;
     box-shadow: 0;
-    overflow-x: hidden;
   }
 
   .left-container {
@@ -220,12 +222,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 96%;
-    height: 50%;
+    width: 100%; /* Set to 100% to fill the screen width */
+    height: auto; /* Remove fixed height */
     background: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
     border-radius: 0 0 20px 20px;
     box-shadow: 0;
-    position: relative;
+    position: absolute;
     left: 0;
     margin: 0;
     z-index: 2;
@@ -298,24 +300,26 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 55%;
-    position: relative;
-    bottom: 3%;
+    height: auto; /* Remove fixed height */
+    position: absolute;
+    top: 50%;
     z-index: 1;
     overflow-x: hidden;
     box-shadow: none;
     margin: 0;
   }
-
   .attribution {
     display: flex;
-    align-items: start;
-    justify-content: start;
+    align-items: center;
+    justify-content: center;
     height: 30px;
     max-width: 360px;
     font-size: 12px;
     margin-left: 0;
     overflow-x: hidden;
-    background: #9b9b9b;
+    position: relative;
+    bottom: 100%;
+    z-index: 1;
+    margin-top: 25px;
   }
 }
